@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,11 +28,89 @@ namespace Ch3_P7_IterationsAndDecisions
 
             #region - 2 - Decision Constructs and the Relational/Equality Operators
 
-
-
+            //IfElseExample();
+            //ExecuteIfElseUsingConditionalOperator();
+            //LogicalOperators_ShortCircuting();
+            
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static void LogicalOperators_ShortCircuting()
+        {
+
+            //bool b = true | functionA();
+
+            Console.WriteLine(b);
+
+            //if ( functionA() | functionB() | functionC() )
+            //{
+            //    Console.WriteLine(" If condition got true ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(" If condition got false < else part executed > ");
+            //}
+        }
+
+        private static bool functionC()
+        {
+            Console.WriteLine("function < condition > C executed");
+            return false;
+        }
+
+        private static bool functionB()
+        {
+            Console.WriteLine("function < condition > B executed");
+            return true;
+        }
+
+        private static bool functionA()
+        {
+            Console.WriteLine("function A executed");
+            return true;
+        }
+
+        private static void ExecuteIfElseUsingConditionalOperator()
+        {
+            //int number = 0;
+            ////int result = 0 ? 1 : 8;
+            //int result = 0==0 ? 1 : 8;
+            //Console.WriteLine( result);
+
+            string stringData = "My textual data";
+            
+            //Console.WriteLine(stringData.Length > 0 ? " > than 0 characters" : " ! > 0 characters");
+            Console.WriteLine();
+
+            //bool result = stringData.Length > 0 ? true : false;
+            //bool result = stringData.Length > 0 ? "true" : "false";
+            //int result = stringData.Length > 0 ? 2 : 1;
+            //Console.WriteLine(result);
+
+            // Restrictions ( you can't use this operator without assignment operator )
+            // stringData.Length > 0 ? 2 : 1;
+        }
+
+        private static void IfElseExample()
+        {
+            string YourParty = "PML-N or PTI";
+
+            //if (1)
+            //{
+
+            //}
+
+            //if (YourParty.Length)
+            //{
+            //    Console.WriteLine(" Your party is greater than zero ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(" your party is piece of crap ");
+            //}
+
         }
 
         private static void DoWhileLoopExample()
