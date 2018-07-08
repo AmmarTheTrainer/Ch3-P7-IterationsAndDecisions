@@ -10,13 +10,27 @@ namespace Ch3_P7_IterationsAndDecisions
     {
         static void Main(string[] args)
         {
+
             // chapter 3 - project 7 - Loops and decisions
+
+            #region - 1 - C# Iteration Constructs
+
+
+
 
             //ForLoopExample();
             //ForEachLoopExample();
             //LinqQueryOverInts();
             //WhileLoopExample();
-            DoWhileLoopExample();
+            //DoWhileLoopExample();
+
+            #endregion
+
+            #region - 2 - Decision Constructs and the Relational/Equality Operators
+
+
+
+            #endregion
 
             Console.ReadLine();
         }
